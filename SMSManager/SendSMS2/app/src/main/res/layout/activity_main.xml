@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:text="SMS Manager"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"
+        android:layout_marginBottom="50dp"
+        />
+    <EditText
+        android:background="@android:drawable/editbox_background"
+        android:inputType="phone"
+        android:maxLength="12"
+        android:id="@+id/editTextPhone"
+        android:padding="15dp"
+        android:hint="Nhập số điện thoại người nhận"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <EditText
+        android:background="@android:drawable/editbox_background"
+        android:padding="15dp"
+        android:inputType="textMultiLine"
+        android:id="@+id/editTextContent"
+        android:hint="Nhập nội dung tin nhắn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:lines="5"/>
+    <Button
+        android:id="@+id/btnSent"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Gửi tin nhắn"
+        android:textAllCaps="false"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>
